@@ -22,26 +22,26 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build and push API Image
-        uses: docker/build-push-action@v2
-        with:
-          context: ./api
-          push: true
-          tags: liinhhnt/web-api
+      # - name: Build and push API Image
+      #   uses: docker/build-push-action@v2
+      #   with:
+      #     context: ./api
+      #     push: true
+      #     tags: liinhhnt/web-api
 
-      - name: Build and push Admin Image
-        uses: docker/build-push-action@v2
-        with:
-          context: ./admin
-          push: true
-          tags: liinhhnt/web-admin
+      # - name: Build and push Admin Image
+      #   uses: docker/build-push-action@v2
+      #   with:
+      #     context: ./admin
+      #     push: true
+      #     tags: liinhhnt/web-admin
 
-      - name: Build and push Client Image
-        uses: docker/build-push-action@v2
-        with:
-          context: ./client
-          push: true
-          tags: liinhhnt/web-client
+      # - name: Build and push Client Image
+      #   uses: docker/build-push-action@v2
+      #   with:
+      #     context: ./client
+      #     push: true
+      #     tags: liinhhnt/web-client
 
   pull-and-up:
     name: Pull new image and deploy to Google Cloud
