@@ -68,7 +68,7 @@ jobs:
         run: 
           # ssh -i ../private.key linhnt.ict@34.143.146.31
           |
-          scp -i ../private.key ./docker-compose.yml liinhhnt@34.72.40.110:/home/liinhhnt
-          ssh -i ../private.key liinhhnt@34.72.40.110 "echo y | sudo docker system prune"
-          ssh -i ../private.key liinhhnt@34.72.40.110 "echo y | sudo docker image prune -a"
-          ssh -i ../private.key liinhhnt@34.72.40.110 "sudo docker compose pull && sudo docker compose down && sudo docker compose up -d"
+          scp -i ../private.key ./docker-compose.yml liinhhnt@34.67.25.156:/home/liinhhnt
+          ssh -i ../private.key liinhhnt@34.67.25.156 "echo y | sudo docker system prune"
+          ssh -i ../private.key liinhhnt@34.67.25.156 "echo y | sudo docker image prune -a"
+          ssh -i ../private.key liinhhnt@34.67.25.156 "sudo docker compose pull && sudo docker compose down && sudo docker compose up -d"
